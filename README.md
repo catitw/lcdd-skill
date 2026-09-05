@@ -10,6 +10,25 @@
 
 ---
 
+## 快速安装 (Install via Skills CLI)
+
+本仓库已完全适配标准 [Skills CLI](https://skills.sh/) (`npx skills`)，支持一键安装到 Claude Code, Cursor, OpenCode, Codex 等 Agent 环境：
+
+```bash
+# 从 GitHub 一键安装全套 3 个 Skills (推荐)
+npx skills add catitw/lcdd-skill -g -y
+
+# 或按需安装单个 Skill
+npx skills add catitw/lcdd-skill@rust-silent-coding -g -y
+npx skills add catitw/lcdd-skill@rust-contract-docs -g -y
+npx skills add catitw/lcdd-skill@rust-doc-deslop -g -y
+
+# 本地路径安装 (当前开发机直接可用)
+npx skills add /home/catitw/mypros/lcdd-skill -g -y
+```
+
+---
+
 ## 核心架构：三位一体闭环（The Triad Architecture）
 
 LCDD 覆盖了软件工程的完整生命周期，将职责精准切分为三个各司其职的 Skill：
